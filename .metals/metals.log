@@ -1,0 +1,985 @@
+2022.06.28 10:33:46 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/gonisiforou/workspace/snowdrop/.metals/lsp.trace.json or /home/gonisiforou/.var/app/com.visualstudio.code/cache/metals/lsp.trace.json[0m
+2022.06.28 10:33:47 INFO  logging to file /home/gonisiforou/workspace/snowdrop/.metals/metals.log[0m
+2022.06.28 10:33:47 INFO  Started: Metals version 0.11.6 in workspace '/home/gonisiforou/workspace/snowdrop' for client Visual Studio Code 1.67.2.[0m
+2022.06.28 10:33:48 INFO  time: initialize in 1.22s[0m
+2022.06.28 10:33:49 WARN  Flyway upgrade recommended: H2 2.1.212 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.1.210.[0m
+2022.06.28 10:33:50 WARN  Build server is not auto-connectable.[0m
+2022.06.28 10:34:01 INFO  running '/home/gonisiforou/.jabba/jdk/openjdk@1.17.0/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals2799688628023464258/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2022.06.28 10:34:01 WARN  no build target for: /home/gonisiforou/workspace/snowdrop/project/metals.sbt[0m
+2022.06.28 10:34:01 WARN  no build target for: /home/gonisiforou/workspace/snowdrop/project/project/metals.sbt[0m
+2022.06.28 10:34:01 INFO  skipping build import with status 'Started'[0m
+2022.06.28 10:34:05 INFO  [info] welcome to sbt 1.6.2 (Oracle Corporation Java 17)[0m
+2022.06.28 10:34:11 INFO  no build target found for /home/gonisiforou/workspace/snowdrop/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.1.2[0m
+2022.06.28 10:34:15 INFO  [info] loading settings for project snowdrop-build-build from metals.sbt ...[0m
+2022.06.28 10:34:16 INFO  [info] loading project definition from /home/gonisiforou/workspace/snowdrop/project/project[0m
+2022.06.28 10:34:20 INFO  [info] loading settings for project snowdrop-build from metals.sbt ...[0m
+2022.06.28 10:34:20 INFO  [info] loading project definition from /home/gonisiforou/workspace/snowdrop/project[0m
+2022.06.28 10:34:25 INFO  [success] Generated .bloop/snowdrop-build.json[0m
+2022.06.28 10:34:25 INFO  [info] compiling 1 Scala source to /home/gonisiforou/workspace/snowdrop/project/target/scala-2.12/sbt-1.0/classes ...[0m
+2022.06.28 10:34:31 INFO  [info] done compiling[0m
+2022.06.28 10:34:31 INFO  [success] Total time: 10 s, completed 28 Jun 2022, 10:34:31[0m
+2022.06.28 10:34:35 INFO  [info] loading settings for project root from build.sbt ...[0m
+2022.06.28 10:34:35 INFO  [info] set current project to snowdrop (in build file:/home/gonisiforou/workspace/snowdrop/)[0m
+2022.06.28 10:34:49 INFO  [success] Generated .bloop/root.json[0m
+2022.06.28 10:34:49 INFO  [success] Generated .bloop/root-test.json[0m
+2022.06.28 10:34:50 INFO  [success] Generated .bloop/snowdrop-circe.json[0m
+2022.06.28 10:34:50 INFO  [success] Generated .bloop/snowdrop-circe-test.json[0m
+2022.06.28 10:34:50 INFO  [success] Total time: 14 s, completed 28 Jun 2022, 10:34:50[0m
+2022.06.28 10:34:51 INFO  time: ran 'sbt bloopInstall' in 49s[0m
+2022.06.28 10:34:51 INFO  Attempting to connect to the build server...[0m
+2022.06.28 10:34:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/gonisiforou/workspace/snowdrop/.metals/bsp.trace.json or /home/gonisiforou/.var/app/com.visualstudio.code/cache/metals/bsp.trace.json[0m
+2022.06.28 10:34:59 INFO  Attempting to connect to the build server...[0m
+2022.06.28 10:34:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/gonisiforou/workspace/snowdrop/project/.metals/bsp.trace.json or /home/gonisiforou/.var/app/com.visualstudio.code/cache/metals/bsp.trace.json[0m
+2022.06.28 10:34:59 INFO  time: Connected to build server in 8.47s[0m
+2022.06.28 10:34:59 INFO  Connected to Build server: Bloop v1.5.0-18-003e6c7b[0m
+2022.06.28 10:34:59 INFO  time: Imported build in 0.11s[0m
+2022.06.28 10:35:07 INFO  time: indexed workspace in 7.33s[0m
+2022.06.28 10:37:25 INFO  compiling snowdrop-circe (1 scala source)[0m
+Jun 28, 2022 10:37:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+Jun 28, 2022 10:37:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 26
+Jun 28, 2022 10:37:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 42
+Jun 28, 2022 10:37:44 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 46
+Jun 28, 2022 10:37:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+Jun 28, 2022 10:37:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69
+Jun 28, 2022 10:37:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 65
+Jun 28, 2022 10:37:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67
+2022.06.28 10:38:00 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:38:00 INFO  time: compiled snowdrop-circe in 35s[0m
+2022.06.28 10:38:01 INFO  time: compiled snowdrop-circe-test in 1.29s[0m
+2022.06.28 10:38:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:38:01 INFO  time: compiled snowdrop-circe-test in 0.6s[0m
+2022.06.28 10:38:06 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:38:10 INFO  time: compiled snowdrop-circe-test in 3.03s[0m
+2022.06.28 10:38:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:38:10 INFO  time: compiled snowdrop-circe-test in 0.53s[0m
+Jun 28, 2022 10:38:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 114
+2022.06.28 10:38:14 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:38:15 INFO  time: compiled snowdrop-circe-test in 1.69s[0m
+2022.06.28 10:40:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:40:09 INFO  time: compiled snowdrop-circe-test in 1.21s[0m
+2022.06.28 10:40:09 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:40:10 INFO  time: compiled snowdrop-circe-test in 0.62s[0m
+2022.06.28 10:43:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:43:21 INFO  time: compiled snowdrop-circe-test in 1.06s[0m
+2022.06.28 10:48:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:48:30 INFO  time: compiled snowdrop-circe-test in 1.1s[0m
+2022.06.28 10:48:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:00 INFO  time: compiled snowdrop-circe-test in 1.08s[0m
+2022.06.28 10:49:05 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:05 INFO  time: compiled snowdrop-circe-test in 0.78s[0m
+2022.06.28 10:49:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:08 INFO  time: compiled snowdrop-circe-test in 0.83s[0m
+2022.06.28 10:49:14 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:14 INFO  time: compiled snowdrop-circe-test in 0.88s[0m
+2022.06.28 10:49:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:50 INFO  time: compiled snowdrop-circe-test in 0.82s[0m
+2022.06.28 10:49:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:54 INFO  time: compiled snowdrop-circe-test in 1.33s[0m
+2022.06.28 10:49:54 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:55 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:49:55 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:49:55 INFO  time: compiled snowdrop-circe-test in 0.45s[0m
+2022.06.28 10:49:55 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:49:56 INFO  time: compiled snowdrop-circe-test in 0.36s[0m
+2022.06.28 10:49:58 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:00 INFO  time: compiled snowdrop-circe-test in 1.27s[0m
+2022.06.28 10:50:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:01 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 10:50:01 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:01 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:02 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:03 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:03 INFO  time: compiled snowdrop-circe-test in 77ms[0m
+2022.06.28 10:50:04 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:16 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:16 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:16 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:17 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:17 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:17 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:17 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:17 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:18 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:18 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 10:50:18 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:19 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:18 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:19 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:20 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 10:50:20 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:28 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:28 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:28 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:28 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:28 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 10:50:29 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:31 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:31 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:31 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:32 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:32 INFO  time: compiled snowdrop-circe-test in 0.2s[0m
+2022.06.28 10:50:32 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:36 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:36 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:36 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:37 INFO  time: compiled snowdrop-circe-test in 68ms[0m
+2022.06.28 10:50:37 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:41 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:41 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:41 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:42 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:42 INFO  time: compiled snowdrop-circe-test in 0.15s[0m
+2022.06.28 10:50:42 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:49 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:49 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:49 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:50:49 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:50:49 INFO  time: compiled snowdrop-circe-test in 0.85s[0m
+2022.06.28 10:51:02 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:02 INFO  time: compiled snowdrop-circe-test in 0.19s[0m
+2022.06.28 10:51:04 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:04 INFO  time: compiled snowdrop-circe-test in 0.71s[0m
+2022.06.28 10:51:06 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:06 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:51:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:10 INFO  time: compiled snowdrop-circe-test in 0.15s[0m
+2022.06.28 10:51:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:13 INFO  time: compiled snowdrop-circe-test in 56ms[0m
+2022.06.28 10:51:16 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:16 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:51:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:37 INFO  time: compiled snowdrop-circe-test in 68ms[0m
+2022.06.28 10:51:43 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:43 INFO  time: compiled snowdrop-circe-test in 55ms[0m
+2022.06.28 10:51:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:53 INFO  time: compiled snowdrop-circe-test in 95ms[0m
+2022.06.28 10:51:58 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:51:58 INFO  time: compiled snowdrop-circe-test in 51ms[0m
+2022.06.28 10:52:04 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:04 INFO  time: compiled snowdrop-circe-test in 66ms[0m
+2022.06.28 10:52:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:07 INFO  time: compiled snowdrop-circe-test in 47ms[0m
+2022.06.28 10:52:11 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:11 INFO  time: compiled snowdrop-circe-test in 46ms[0m
+2022.06.28 10:52:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:17 INFO  time: compiled snowdrop-circe-test in 56ms[0m
+2022.06.28 10:52:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:20 INFO  time: compiled snowdrop-circe-test in 51ms[0m
+2022.06.28 10:52:24 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:24 INFO  time: compiled snowdrop-circe-test in 62ms[0m
+2022.06.28 10:52:25 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:25 INFO  time: compiled snowdrop-circe-test in 54ms[0m
+2022.06.28 10:52:58 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:52:58 INFO  time: compiled snowdrop-circe-test in 54ms[0m
+2022.06.28 10:54:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:17 INFO  time: compiled snowdrop-circe-test in 0.17s[0m
+2022.06.28 10:54:19 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:19 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 10:54:23 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:23 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:54:25 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:25 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:54:28 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:28 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 10:54:31 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:31 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:54:43 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:44 INFO  time: compiled snowdrop-circe-test in 1.34s[0m
+2022.06.28 10:54:44 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:45 INFO  time: compiled snowdrop-circe-test in 0.68s[0m
+2022.06.28 10:54:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:54:50 INFO  time: compiled snowdrop-circe-test in 0.67s[0m
+2022.06.28 10:55:15 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:55:15 INFO  time: compiled snowdrop-circe-test in 58ms[0m
+2022.06.28 10:55:23 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:55:23 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 10:55:42 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:55:42 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 10:55:50 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:55:50 INFO  time: compiled snowdrop-circe in 49ms[0m
+2022.06.28 10:55:55 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:55:55 INFO  time: compiled snowdrop-circe in 44ms[0m
+2022.06.28 10:55:58 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:55:58 INFO  time: compiled snowdrop-circe in 0.52s[0m
+2022.06.28 10:56:01 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:01 INFO  time: compiled snowdrop-circe in 73ms[0m
+2022.06.28 10:56:04 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:04 INFO  time: compiled snowdrop-circe in 0.45s[0m
+2022.06.28 10:56:05 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:56:05 INFO  time: compiled snowdrop-circe-test in 0.36s[0m
+2022.06.28 10:56:17 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:17 INFO  time: compiled snowdrop-circe in 57ms[0m
+2022.06.28 10:56:23 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:23 INFO  time: compiled snowdrop-circe in 53ms[0m
+2022.06.28 10:56:26 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:26 INFO  time: compiled snowdrop-circe in 59ms[0m
+2022.06.28 10:56:30 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:30 INFO  time: compiled snowdrop-circe in 62ms[0m
+2022.06.28 10:56:40 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:40 INFO  time: compiled snowdrop-circe in 87ms[0m
+2022.06.28 10:56:44 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:56:44 INFO  time: compiled snowdrop-circe in 0.57s[0m
+2022.06.28 10:56:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:56:50 INFO  time: compiled snowdrop-circe-test in 0.96s[0m
+2022.06.28 10:57:04 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:57:04 INFO  time: compiled snowdrop-circe in 0.47s[0m
+2022.06.28 10:58:06 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:58:06 INFO  time: compiled snowdrop-circe in 0.42s[0m
+2022.06.28 10:58:24 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:58:24 INFO  time: compiled snowdrop-circe in 0.5s[0m
+2022.06.28 10:58:26 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:58:26 INFO  time: compiled snowdrop-circe in 0.12s[0m
+2022.06.28 10:58:29 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:58:29 INFO  time: compiled snowdrop-circe in 67ms[0m
+2022.06.28 10:58:30 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 10:58:30 INFO  time: compiled snowdrop-circe in 0.52s[0m
+2022.06.28 10:58:36 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:58:38 INFO  time: compiled snowdrop-circe-test in 1.13s[0m
+2022.06.28 10:59:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:14 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:59:14 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 10:59:13 INFO  time: compiled snowdrop-circe-test in 0.87s[0m
+2022.06.28 10:59:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:17 INFO  time: compiled snowdrop-circe-test in 94ms[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:17 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:18 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:18 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:18 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:22:3: stale bloop error: unclosed comment
+  /*
+  ^[0m
+2022.06.28 10:59:18 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:27:2: stale bloop error: '}' expected but eof found.
+}
+ ^[0m
+2022.06.28 10:59:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:20 INFO  time: compiled snowdrop-circe-test in 0.7s[0m
+2022.06.28 10:59:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:29 INFO  time: compiled snowdrop-circe-test in 0.73s[0m
+2022.06.28 10:59:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:37 INFO  time: compiled snowdrop-circe-test in 0.83s[0m
+2022.06.28 10:59:40 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:40 INFO  time: compiled snowdrop-circe-test in 0.7s[0m
+2022.06.28 10:59:43 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:43 INFO  time: compiled snowdrop-circe-test in 0.75s[0m
+2022.06.28 10:59:48 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:48 INFO  time: compiled snowdrop-circe-test in 0.74s[0m
+2022.06.28 10:59:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:53 INFO  time: compiled snowdrop-circe-test in 0.82s[0m
+2022.06.28 10:59:56 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 10:59:56 INFO  time: compiled snowdrop-circe-test in 86ms[0m
+Jun 28, 2022 10:59:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2388
+2022.06.28 11:00:00 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:00 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:00:19 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:19 INFO  time: compiled snowdrop-circe-test in 0.67s[0m
+2022.06.28 11:00:22 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:22 INFO  time: compiled snowdrop-circe-test in 0.71s[0m
+2022.06.28 11:00:25 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:26 INFO  time: compiled snowdrop-circe-test in 1.16s[0m
+2022.06.28 11:00:33 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:33 INFO  time: compiled snowdrop-circe-test in 0.7s[0m
+2022.06.28 11:00:38 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:38 INFO  time: compiled snowdrop-circe-test in 0.72s[0m
+2022.06.28 11:00:42 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:42 INFO  time: compiled snowdrop-circe-test in 0.81s[0m
+2022.06.28 11:00:47 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:47 INFO  time: compiled snowdrop-circe-test in 0.93s[0m
+2022.06.28 11:00:49 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:00:49 INFO  time: compiled snowdrop-circe-test in 0.75s[0m
+2022.06.28 11:21:09 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:09 INFO  time: compiled snowdrop-circe-test in 0.81s[0m
+Jun 28, 2022 11:21:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2773
+2022.06.28 11:21:16 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:16 INFO  time: compiled snowdrop-circe-test in 52ms[0m
+2022.06.28 11:21:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:20 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:21:21 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:21 INFO  time: compiled snowdrop-circe-test in 82ms[0m
+2022.06.28 11:21:26 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:26 INFO  time: compiled snowdrop-circe-test in 75ms[0m
+2022.06.28 11:21:27 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:27 INFO  time: compiled snowdrop-circe-test in 0.16s[0m
+2022.06.28 11:21:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:29 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+2022.06.28 11:21:32 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:32 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:21:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:53 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:21:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:21:59 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:22:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:22:01 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:22:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:22:37 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:23:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:01 INFO  time: compiled snowdrop-circe-test in 0.76s[0m
+2022.06.28 11:23:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:08 INFO  time: compiled snowdrop-circe-test in 0.17s[0m
+2022.06.28 11:23:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:10 INFO  time: compiled snowdrop-circe-test in 0.76s[0m
+2022.06.28 11:23:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:13 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 11:23:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:29 INFO  time: compiled snowdrop-circe-test in 0.78s[0m
+2022.06.28 11:23:30 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:30 INFO  time: compiled snowdrop-circe-test in 0.34s[0m
+2022.06.28 11:23:41 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:41 INFO  time: compiled snowdrop-circe-test in 0.78s[0m
+2022.06.28 11:23:47 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:47 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 11:23:49 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:49 INFO  time: compiled snowdrop-circe-test in 0.16s[0m
+2022.06.28 11:23:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:53 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:23:57 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:23:57 INFO  time: compiled snowdrop-circe-test in 50ms[0m
+2022.06.28 11:24:00 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:00 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:24:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:10 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:24:13 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:23:49: stale bloop error: type mismatch;
+ found   : String("hgfdhgfdjhgdsfg")
+ required: io.circe.JsonNumber
+    val initialJsonNumber = Json.fromJsonNumber("hgfdhgfdjhgdsfg")
+                                                ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:24:13 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:25:14: stale bloop error: not found: value initialJsonString
+    MaskJson(initialJsonString) mustEqual
+             ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:24:13 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:23:49: stale bloop error: type mismatch;
+ found   : String("hgfdhgfdjhgdsfg")
+ required: io.circe.JsonNumber
+    val initialJsonNumber = Json.fromJsonNumber("hgfdhgfdjhgdsfg")
+                                                ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:24:13 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:25:14: stale bloop error: not found: value initialJsonString
+    MaskJson(initialJsonString) mustEqual
+             ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:24:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:17 INFO  time: compiled snowdrop-circe-test in 48ms[0m
+2022.06.28 11:24:26 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:26 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:24:27 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:27 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:24:45 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:45 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:24:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:24:59 INFO  time: compiled snowdrop-circe-test in 0.15s[0m
+2022.06.28 11:25:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:25:01 INFO  time: compiled snowdrop-circe-test in 0.24s[0m
+2022.06.28 11:25:03 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:25:03 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:25:23 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:25:23 INFO  time: compiled snowdrop-circe-test in 0.19s[0m
+2022.06.28 11:25:25 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:25:25 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:25:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:25:29 INFO  time: compiled snowdrop-circe-test in 0.94s[0m
+2022.06.28 11:26:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:26:50 INFO  time: compiled snowdrop-circe-test in 0.79s[0m
+2022.06.28 11:26:58 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:26:58 INFO  time: compiled snowdrop-circe-test in 0.68s[0m
+2022.06.28 11:27:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:07 INFO  time: compiled snowdrop-circe-test in 0.76s[0m
+2022.06.28 11:27:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:13 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:27:15 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:15 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:27:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:17 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:27:18 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:18 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:27:24 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:24 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:27:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:29 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:27:30 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: type mismatch;
+ found   : String("54569")
+ required: Int
+    val initialJsonNumber = Json.fromInt("54569")
+                                         ^^^^^^^[0m
+2022.06.28 11:27:30 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:33:14: stale bloop error: not found: value initialJsonString
+    MaskJson(initialJsonString, maskingSequence = "###") mustEqual expectedMaskedJsonString
+             ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:27:30 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: type mismatch;
+ found   : String("54569")
+ required: Int
+    val initialJsonNumber = Json.fromInt("54569")
+                                         ^^^^^^^[0m
+2022.06.28 11:27:30 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:33:14: stale bloop error: not found: value initialJsonString
+    MaskJson(initialJsonString, maskingSequence = "###") mustEqual expectedMaskedJsonString
+             ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: type mismatch;
+ found   : String("54569")
+ required: Int
+    val initialJsonNumber = Json.fromInt("54569")
+                                         ^^^^^^^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:33:14: stale bloop error: not found: value initialJsonString
+    MaskJson(initialJsonString, maskingSequence = "###") mustEqual expectedMaskedJsonString
+             ^^^^^^^^^^^^^^^^^[0m
+2022.06.28 11:27:31 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: unclosed string literal
+    val initialJsonNumber = Json.fromInt("54569)
+                                         ^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: unclosed string literal
+    val initialJsonNumber = Json.fromInt("54569)
+                                         ^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:34:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 11:27:31 INFO  time: compiled snowdrop-circe-test in 49ms[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: unclosed string literal
+    val initialJsonNumber = Json.fromInt("54569)
+                                         ^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:34:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:30:42: stale bloop error: unclosed string literal
+    val initialJsonNumber = Json.fromInt("54569)
+                                         ^[0m
+2022.06.28 11:27:31 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:34:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 11:27:32 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:32 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:27:40 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:27:40 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:28:02 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:02 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:28:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:08 INFO  time: compiled snowdrop-circe-test in 42ms[0m
+2022.06.28 11:28:11 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:11 INFO  time: compiled snowdrop-circe-test in 46ms[0m
+2022.06.28 11:28:21 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:21 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:28:35 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:35 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:28:46 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:46 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:28:51 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:28:51 INFO  time: compiled snowdrop-circe-test in 0.75s[0m
+2022.06.28 11:30:11 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:30:11 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:30:54 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:30:54 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:31:26 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:31:26 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:31:32 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:31:32 INFO  time: compiled snowdrop-circe-test in 0.99s[0m
+2022.06.28 11:44:35 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:44:35 INFO  time: compiled snowdrop-circe-test in 0.74s[0m
+2022.06.28 11:44:38 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:44:38 INFO  time: compiled snowdrop-circe-test in 0.78s[0m
+2022.06.28 11:44:43 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:44:43 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:44:48 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:44:48 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+2022.06.28 11:44:58 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:44:58 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:45:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:01 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+Jun 28, 2022 11:45:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4160
+2022.06.28 11:45:05 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:05 INFO  time: compiled snowdrop-circe-test in 63ms[0m
+2022.06.28 11:45:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:07 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:45:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:17 INFO  time: compiled snowdrop-circe-test in 0.16s[0m
+2022.06.28 11:45:21 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:21 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:45:25 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:25 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:45:38 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:38 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:45:39 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:39 INFO  time: compiled snowdrop-circe-test in 99ms[0m
+2022.06.28 11:45:52 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:45:52 INFO  time: compiled snowdrop-circe-test in 0.15s[0m
+2022.06.28 11:46:05 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:05 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:46:11 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:11 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+2022.06.28 11:46:21 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:21 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:46:23 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:23 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:46:29 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:29 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:46:31 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:31 INFO  time: compiled snowdrop-circe-test in 94ms[0m
+2022.06.28 11:46:44 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:44 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:46:44 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:46:44 INFO  time: compiled snowdrop-circe-test in 81ms[0m
+2022.06.28 11:46:49 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:46:49 INFO  time: compiled snowdrop-circe in 57ms[0m
+2022.06.28 11:46:51 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:46:51 INFO  time: compiled snowdrop-circe in 51ms[0m
+2022.06.28 11:46:55 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:46:55 INFO  time: compiled snowdrop-circe in 48ms[0m
+2022.06.28 11:46:57 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:46:57 INFO  time: compiled snowdrop-circe in 66ms[0m
+2022.06.28 11:46:58 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:46:58 INFO  time: compiled snowdrop-circe in 56ms[0m
+2022.06.28 11:47:01 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:01 INFO  time: compiled snowdrop-circe in 66ms[0m
+2022.06.28 11:47:12 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:12 INFO  time: compiled snowdrop-circe in 0.12s[0m
+2022.06.28 11:47:16 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:16 INFO  time: compiled snowdrop-circe in 52ms[0m
+2022.06.28 11:47:18 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:18 INFO  time: compiled snowdrop-circe in 90ms[0m
+2022.06.28 11:47:22 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:22 INFO  time: compiled snowdrop-circe in 75ms[0m
+2022.06.28 11:47:33 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:33 INFO  time: compiled snowdrop-circe in 49ms[0m
+2022.06.28 11:47:34 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:34 INFO  time: compiled snowdrop-circe in 0.93s[0m
+2022.06.28 11:47:39 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:39 INFO  time: compiled snowdrop-circe in 0.62s[0m
+2022.06.28 11:47:53 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:53 INFO  Deduplicating compilation of snowdrop-circe from bsp client 'Metals 0.11.6' (since 1h 13m 1.958s)[0m
+2022.06.28 11:47:53 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:53 INFO  time: compiled snowdrop-circe in 0.53s[0m
+2022.06.28 11:47:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:47:53 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:47:59 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:47:59 INFO  time: compiled snowdrop-circe in 0.56s[0m
+2022.06.28 11:48:19 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:48:19 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 11:48:40 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:48:40 INFO  time: compiled snowdrop-circe in 0.54s[0m
+2022.06.28 11:48:44 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:48:44 INFO  time: compiled snowdrop-circe in 0.89s[0m
+2022.06.28 11:48:48 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:48:48 INFO  time: compiled snowdrop-circe in 0.1s[0m
+2022.06.28 11:48:49 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:52 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:52 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:52 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:52 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:53 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:54 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:54 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:54 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:55 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:55 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:55 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:56 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:56 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:56 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/main/scala/snowdrop/MaskJson.scala[0m
+2022.06.28 11:48:57 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:48:57 INFO  time: compiled snowdrop-circe in 0.99s[0m
+2022.06.28 11:48:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:48:59 INFO  time: compiled snowdrop-circe-test in 0.29s[0m
+2022.06.28 11:49:24 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:24 INFO  time: compiled snowdrop-circe-test in 71ms[0m
+2022.06.28 11:49:27 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:27 INFO  time: compiled snowdrop-circe-test in 42ms[0m
+2022.06.28 11:49:30 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:30 INFO  time: compiled snowdrop-circe-test in 63ms[0m
+2022.06.28 11:49:34 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:34 INFO  time: compiled snowdrop-circe-test in 43ms[0m
+2022.06.28 11:49:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:37 INFO  time: compiled snowdrop-circe-test in 0.17s[0m
+2022.06.28 11:49:47 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:49:47 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:49:57 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:49:57 INFO  time: compiled snowdrop-circe in 0.15s[0m
+2022.06.28 11:50:00 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:00 INFO  time: compiled snowdrop-circe in 40ms[0m
+2022.06.28 11:50:04 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:04 INFO  time: compiled snowdrop-circe in 77ms[0m
+2022.06.28 11:50:18 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:18 INFO  time: compiled snowdrop-circe in 94ms[0m
+2022.06.28 11:50:21 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:21 INFO  time: compiled snowdrop-circe in 73ms[0m
+2022.06.28 11:50:29 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:29 INFO  time: compiled snowdrop-circe in 0.15s[0m
+2022.06.28 11:50:32 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:32 INFO  time: compiled snowdrop-circe in 90ms[0m
+2022.06.28 11:50:53 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:50:53 INFO  time: compiled snowdrop-circe in 0.64s[0m
+2022.06.28 11:51:02 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:02 INFO  time: compiled snowdrop-circe in 48ms[0m
+2022.06.28 11:51:03 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:03 INFO  time: compiled snowdrop-circe in 90ms[0m
+2022.06.28 11:51:05 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:05 INFO  time: compiled snowdrop-circe in 71ms[0m
+2022.06.28 11:51:07 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:07 INFO  time: compiled snowdrop-circe in 38ms[0m
+2022.06.28 11:51:11 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:11 INFO  time: compiled snowdrop-circe in 42ms[0m
+2022.06.28 11:51:19 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:19 INFO  time: compiled snowdrop-circe in 0.55s[0m
+2022.06.28 11:51:24 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:51:24 INFO  time: compiled snowdrop-circe-test in 0.24s[0m
+2022.06.28 11:51:58 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:51:58 INFO  time: compiled snowdrop-circe in 72ms[0m
+2022.06.28 11:52:02 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:02 INFO  time: compiled snowdrop-circe in 46ms[0m
+Jun 28, 2022 11:52:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6182
+2022.06.28 11:52:08 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:08 INFO  time: compiled snowdrop-circe in 47ms[0m
+2022.06.28 11:52:09 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:09 INFO  time: compiled snowdrop-circe in 57ms[0m
+2022.06.28 11:52:11 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:11 INFO  time: compiled snowdrop-circe in 45ms[0m
+2022.06.28 11:52:16 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:16 INFO  time: compiled snowdrop-circe in 0.11s[0m
+2022.06.28 11:52:19 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:19 INFO  time: compiled snowdrop-circe in 0.12s[0m
+2022.06.28 11:52:23 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:23 INFO  time: compiled snowdrop-circe in 45ms[0m
+Jun 28, 2022 11:52:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6427
+2022.06.28 11:52:33 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:33 INFO  time: compiled snowdrop-circe in 98ms[0m
+2022.06.28 11:52:34 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:34 INFO  time: compiled snowdrop-circe in 65ms[0m
+2022.06.28 11:52:38 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:38 INFO  time: compiled snowdrop-circe in 80ms[0m
+2022.06.28 11:52:39 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:39 INFO  time: compiled snowdrop-circe in 65ms[0m
+2022.06.28 11:52:43 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:52:43 INFO  time: compiled snowdrop-circe in 0.76s[0m
+2022.06.28 11:52:47 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:52:47 INFO  time: compiled snowdrop-circe-test in 0.28s[0m
+2022.06.28 11:53:23 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:23 INFO  time: compiled snowdrop-circe in 77ms[0m
+2022.06.28 11:53:39 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:39 INFO  time: compiled snowdrop-circe in 53ms[0m
+2022.06.28 11:53:44 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:44 INFO  time: compiled snowdrop-circe in 93ms[0m
+2022.06.28 11:53:46 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:46 INFO  time: compiled snowdrop-circe in 0.11s[0m
+2022.06.28 11:53:49 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:49 INFO  time: compiled snowdrop-circe in 75ms[0m
+2022.06.28 11:53:53 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:53:53 INFO  time: compiled snowdrop-circe in 69ms[0m
+2022.06.28 11:54:02 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 11:54:02 INFO  time: compiled snowdrop-circe in 0.71s[0m
+2022.06.28 11:54:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:07 INFO  time: compiled snowdrop-circe-test in 0.27s[0m
+2022.06.28 11:54:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:13 INFO  time: compiled snowdrop-circe-test in 78ms[0m
+2022.06.28 11:54:15 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:15 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 11:54:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:18 INFO  time: compiled snowdrop-circe-test in 1.12s[0m
+2022.06.28 11:54:28 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:28 INFO  time: compiled snowdrop-circe-test in 0.22s[0m
+2022.06.28 11:54:32 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:32 INFO  time: compiled snowdrop-circe-test in 0.96s[0m
+2022.06.28 11:54:51 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:51 INFO  time: compiled snowdrop-circe-test in 0.15s[0m
+2022.06.28 11:54:55 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:55 INFO  time: compiled snowdrop-circe-test in 0.22s[0m
+2022.06.28 11:54:56 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:56 INFO  time: compiled snowdrop-circe-test in 82ms[0m
+2022.06.28 11:54:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:54:59 INFO  time: compiled snowdrop-circe-test in 0.26s[0m
+Jun 28, 2022 11:55:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7251
+Jun 28, 2022 11:55:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7257
+2022.06.28 11:55:04 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:04 INFO  time: compiled snowdrop-circe-test in 59ms[0m
+2022.06.28 11:55:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:08 INFO  time: compiled snowdrop-circe-test in 47ms[0m
+2022.06.28 11:55:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:10 INFO  time: compiled snowdrop-circe-test in 60ms[0m
+2022.06.28 11:55:12 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:12 INFO  time: compiled snowdrop-circe-test in 47ms[0m
+2022.06.28 11:55:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:13 INFO  time: compiled snowdrop-circe-test in 22ms[0m
+2022.06.28 11:55:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:13 INFO  time: compiled snowdrop-circe-test in 9ms[0m
+2022.06.28 11:55:15 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:15 INFO  time: compiled snowdrop-circe-test in 0.7s[0m
+2022.06.28 11:55:20 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:55:21 INFO  time: compiled snowdrop-circe-test in 1.34s[0m
+2022.06.28 11:57:45 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:57:45 INFO  time: compiled snowdrop-circe-test in 0.99s[0m
+2022.06.28 11:58:57 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:58:57 INFO  time: compiled snowdrop-circe-test in 0.11s[0m
+2022.06.28 11:58:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:58:59 INFO  time: compiled snowdrop-circe-test in 98ms[0m
+2022.06.28 11:59:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:59:10 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 11:59:11 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 11:59:11 INFO  time: compiled snowdrop-circe-test in 0.14s[0m
+2022.06.28 12:01:16 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:16 INFO  time: compiled snowdrop-circe-test in 0.28s[0m
+2022.06.28 12:01:18 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:18 INFO  time: compiled snowdrop-circe-test in 0.17s[0m
+2022.06.28 12:01:22 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:22 INFO  time: compiled snowdrop-circe-test in 0.16s[0m
+2022.06.28 12:01:26 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:26 INFO  time: compiled snowdrop-circe-test in 97ms[0m
+2022.06.28 12:01:34 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:34 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 12:01:37 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:37 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+2022.06.28 12:01:45 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:45 INFO  time: compiled snowdrop-circe-test in 0.17s[0m
+2022.06.28 12:01:52 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:52 INFO  time: compiled snowdrop-circe-test in 0.1s[0m
+2022.06.28 12:01:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:01:59 INFO  time: compiled snowdrop-circe-test in 0.16s[0m
+2022.06.28 12:02:31 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:02:31 INFO  time: compiled snowdrop-circe-test in 0.83s[0m
+2022.06.28 12:04:25 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:04:25 INFO  time: compiled snowdrop-circe in 0.57s[0m
+2022.06.28 12:04:39 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:04:39 INFO  time: compiled snowdrop-circe in 0.58s[0m
+2022.06.28 12:04:57 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:04:57 INFO  time: compiled snowdrop-circe in 0.56s[0m
+2022.06.28 12:05:09 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:10 INFO  time: compiled snowdrop-circe-test in 1.09s[0m
+2022.06.28 12:05:13 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:13 INFO  time: compiled snowdrop-circe-test in 0.12s[0m
+2022.06.28 12:05:22 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:22 INFO  time: compiled snowdrop-circe-test in 0.2s[0m
+2022.06.28 12:05:26 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:26 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+Jun 28, 2022 12:05:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8441
+2022.06.28 12:05:38 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:38 INFO  time: compiled snowdrop-circe-test in 49ms[0m
+2022.06.28 12:05:40 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:40 INFO  time: compiled snowdrop-circe-test in 55ms[0m
+2022.06.28 12:05:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:50 INFO  time: compiled snowdrop-circe-test in 0.24s[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: type mismatch;
+ found   : String("1")
+ required: Int
+    MaskJson(Json.obj("a" -> Json.fromInt("1")), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^^^[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:42:7: stale bloop error: not found: value expectedMaskedJsonNumber
+      expectedMaskedJsonNumber
+      ^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: type mismatch;
+ found   : String("1")
+ required: Int
+    MaskJson(Json.obj("a" -> Json.fromInt("1")), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^^^[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:42:7: stale bloop error: not found: value expectedMaskedJsonNumber
+      expectedMaskedJsonNumber
+      ^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: type mismatch;
+ found   : String("1")
+ required: Int
+    MaskJson(Json.obj("a" -> Json.fromInt("1")), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^^^[0m
+2022.06.28 12:05:51 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:42:7: stale bloop error: not found: value expectedMaskedJsonNumber
+      expectedMaskedJsonNumber
+      ^^^^^^^^^^^^^^^^^^^^^^^^[0m
+2022.06.28 12:05:52 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: unclosed string literal
+    MaskJson(Json.obj("a" -> Json.fromInt("1)), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: unclosed string literal
+    MaskJson(Json.obj("a" -> Json.fromInt("1)), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:43:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:05:52 INFO  time: compiled snowdrop-circe-test in 78ms[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: unclosed string literal
+    MaskJson(Json.obj("a" -> Json.fromInt("1)), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:43:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:41:43: stale bloop error: unclosed string literal
+    MaskJson(Json.obj("a" -> Json.fromInt("1)), maskingSettings = MaskJson.Settings.default) mustEqual 
+                                          ^[0m
+2022.06.28 12:05:52 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:43:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:05:53 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:53 INFO  time: compiled snowdrop-circe-test in 97ms[0m
+2022.06.28 12:05:59 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:05:59 INFO  time: compiled snowdrop-circe-test in 39ms[0m
+2022.06.28 12:06:06 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:07 INFO  time: compiled snowdrop-circe-test in 1.19s[0m
+2022.06.28 12:06:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:07 INFO  time: compiled snowdrop-circe-test in 0.39s[0m
+2022.06.28 12:06:09 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:10 INFO  time: compiled snowdrop-circe-test in 1.55s[0m
+2022.06.28 12:06:11 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 12:06:21 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 12:06:26 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 12:06:26 WARN  Could not load snapshot text for /home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala[0m
+2022.06.28 12:06:27 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:27 INFO  time: compiled snowdrop-circe-test in 0.72s[0m
+2022.06.28 12:06:33 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:34 INFO  time: compiled snowdrop-circe-test in 1.1s[0m
+2022.06.28 12:06:34 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:36 INFO  time: compiled snowdrop-circe-test in 0.34s[0m
+2022.06.28 12:06:49 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:49 INFO  time: compiled snowdrop-circe-test in 59ms[0m
+2022.06.28 12:06:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:50 INFO  time: compiled snowdrop-circe-test in 0.18s[0m
+2022.06.28 12:06:51 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:06:51 INFO  time: compiled snowdrop-circe-test in 0.73s[0m
+2022.06.28 12:07:17 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:07:17 INFO  time: compiled snowdrop-circe-test in 0.92s[0m
+2022.06.28 12:07:28 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:07:28 INFO  time: compiled snowdrop-circe-test in 0.72s[0m
+2022.06.28 12:09:56 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:09:58 INFO  time: compiled snowdrop-circe-test in 2.08s[0m
+2022.06.28 12:10:01 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:10:02 INFO  time: compiled snowdrop-circe-test in 1.13s[0m
+2022.06.28 12:10:04 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:10:04 INFO  time: compiled snowdrop-circe-test in 0.69s[0m
+Jun 28, 2022 12:10:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9346
+2022.06.28 12:10:46 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:10:46 INFO  time: compiled snowdrop-circe-test in 0.13s[0m
+2022.06.28 12:10:50 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:10:50 INFO  time: compiled snowdrop-circe-test in 45ms[0m
+Jun 28, 2022 12:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9450
+2022.06.28 12:11:04 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:04 INFO  time: compiled snowdrop-circe-test in 70ms[0m
+2022.06.28 12:11:06 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:06 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:07 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr")
+                        ^[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr")
+                        ^[0m
+2022.06.28 12:11:07 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:21: stale bloop error: identifier expected but string literal found.
+      Json.arr(Json.arr")
+                    ^[0m
+2022.06.28 12:11:07 INFO  time: compiled snowdrop-circe-test in 65ms[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr")
+                        ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:21: stale bloop error: identifier expected but string literal found.
+      Json.arr(Json.arr")
+                    ^[0m
+2022.06.28 12:11:08 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr(")
+                        ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr(")
+                        ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:08 INFO  time: compiled snowdrop-circe-test in 26ms[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr(")
+                        ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr(")
+                        ^[0m
+2022.06.28 12:11:08 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:09 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:44:25: stale bloop error: unclosed string literal
+      Json.arr(Json.arr(")
+                        ^[0m
+2022.06.28 12:11:09 INFO  file:///home/gonisiforou/workspace/snowdrop/snowdrop-circe/src/test/scala/snowdrop/MaskLiteralsSpec.scala:45:3: stale bloop error: ')' expected but '}' found.
+  }
+  ^[0m
+2022.06.28 12:11:09 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:09 INFO  time: compiled snowdrop-circe-test in 46ms[0m
+2022.06.28 12:11:10 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:10 INFO  time: compiled snowdrop-circe-test in 0.9s[0m
+2022.06.28 12:11:16 INFO  compiling snowdrop-circe-test (1 scala source)[0m
+2022.06.28 12:11:17 INFO  time: compiled snowdrop-circe-test in 1.32s[0m
+2022.06.28 12:11:42 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:42 INFO  time: compiled snowdrop-circe in 48ms[0m
+2022.06.28 12:11:43 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:43 INFO  time: compiled snowdrop-circe in 75ms[0m
+2022.06.28 12:11:45 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:45 INFO  time: compiled snowdrop-circe in 44ms[0m
+2022.06.28 12:11:48 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:48 INFO  time: compiled snowdrop-circe in 40ms[0m
+2022.06.28 12:11:53 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:53 INFO  time: compiled snowdrop-circe in 40ms[0m
+2022.06.28 12:11:54 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:54 INFO  time: compiled snowdrop-circe in 79ms[0m
+2022.06.28 12:11:56 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:11:56 INFO  time: compiled snowdrop-circe in 47ms[0m
+Jun 28, 2022 12:12:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9729
+2022.06.28 12:12:11 INFO  compiling snowdrop-circe (1 scala source)[0m
+2022.06.28 12:12:11 INFO  time: compiled snowdrop-circe in 53ms[0m

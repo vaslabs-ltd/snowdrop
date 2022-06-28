@@ -1,0 +1,154 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root-test",
+        "directory": "/home/gonisiforou/workspace/snowdrop",
+        "workspaceDir": "/home/gonisiforou/workspace/snowdrop",
+        "sources": [
+            "/home/gonisiforou/workspace/snowdrop/src/test/scala",
+            "/home/gonisiforou/workspace/snowdrop/src/test/scala-2.13",
+            "/home/gonisiforou/workspace/snowdrop/src/test/scala-2",
+            "/home/gonisiforou/workspace/snowdrop/src/test/java",
+            "/home/gonisiforou/workspace/snowdrop/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "root",
+            "snowdrop-circe-test"
+        ],
+        "classpath": [
+            "/home/gonisiforou/workspace/snowdrop/.bloop/root/scala-2.13/classes",
+            "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+        ],
+        "out": "/home/gonisiforou/workspace/snowdrop/.bloop/root",
+        "classesDir": "/home/gonisiforou/workspace/snowdrop/.bloop/root/scala-2.13/test-classes",
+        "resources": [
+            "/home/gonisiforou/workspace/snowdrop/src/test/resources",
+            "/home/gonisiforou/workspace/snowdrop/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.8",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+                "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.jar",
+                "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+                "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/home/gonisiforou/.jabba/jdk/openjdk@1.17.0",
+                "options": [
+                    "-Duser.dir=/home/gonisiforou/workspace/snowdrop"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/gonisiforou/.var/app/com.visualstudio.code/cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
