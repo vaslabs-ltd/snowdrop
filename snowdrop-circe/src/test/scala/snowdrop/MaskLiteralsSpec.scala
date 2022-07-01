@@ -30,4 +30,68 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
     
     MaskJson.apply(input) mustEqual expectedOutput
   }
+
+  "json masking" must "mask all elements within a json object" in {
+    val input: Json = Json.obj("dfhdfhhdf" -> Json.fromString("dfhdfhhd"))
+    val expectedOutput: Json = Json.obj("dfhdfhhdf" -> Json.fromString("*****"))
+
+    MaskJson.apply(input) mustEqual expectedOutput
+  }
+
+  "json masking" must "mask all nested values within a json object" in {
+    
+    val friendA = createFriend("A", 15, List("food"))
+
+    val friendB = createFriend("B", 16, List("football"))
+
+    val allFriends = Json.arr(friendA, friendB)
+
+    val person = createPerson("George", 17, List("movies"), allFriends)
+
+    val expectedOutput = Json.obj(
+      "name" -> Json.fromString("*****"),
+      "age" -> Json.fromString("*****"),
+      "hobbies" -> Json.arr(Json.fromString("*****")),
+      "friends" -> Json.arr(Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))), 
+      Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))))
+      
+    )    
+    MaskJson.apply(person) mustEqual expectedOutput
+  }
+
+  private def createFriend(name: String, age: Int, hobbies: List[String]): Json = 
+    Json.obj(
+      "name" -> Json.fromString(name),
+      "age" -> Json.fromString(age.toString),
+      "hobbies" -> Json.arr(hobbies.map(Json.fromString):_*)
+    )
+
+  private def createPerson(name: String, age: Int, hobbies: List[String], friends: Json): Json =
+    createFriend(name, age, hobbies).mapObject(_.add("friends", friends))
 }
+
+/*
+{
+  "name" : "George",
+  "age" : "15",
+  "hobbies" : ["football", "food", "movies"]
+}
+{
+  "name" : "George",
+  "age" : "15",
+  "hobbies" : ["football", "food", "movies"],
+  "friends": [
+    {
+      "name",
+      "age": "16",
+      "hobbies": []
+    },
+     {
+      "name",
+      "age": "16",
+      "hobbies": []
+    }
+  ]
+}
+*/
+

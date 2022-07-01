@@ -2,12 +2,16 @@ package snowdrop
 
 import io.circe.Json
 import scala.annotation.tailrec
+import io.circe.JsonObject
 
 object MaskJson {
   final val StringMask = "*****"
   def apply(json: Json): Json = {
     if(json.isArray) 
       json.mapArray(maskVectorJson)
+    else if(json.isObject){
+      json.mapObject(maskJsonObject)
+    }
     else
       Json.fromString(StringMask)
   }
@@ -23,4 +27,27 @@ object MaskJson {
     vectorLoop(vector, Vector.empty)
   }
 
+
+  private def maskJsonObject(jobj: JsonObject): JsonObject = {
+    @tailrec
+    def objectLoop(unmaskedObject: Vector[(String, Json)], maskedObject: Vector[(String, Json)]): Vector[(String, Json)] = {
+       if(unmaskedObject.isEmpty)
+         maskedObject
+       else {
+          val (key: String, valueToMask: Json) = unmaskedObject.head
+          val maskedValue = apply(valueToMask)
+          val remainingUnmaskedObject: Vector[(String, Json)] = unmaskedObject.tail
+          val newMaskedObject: Vector[(String, Json)] = maskedObject.appended(key -> maskedValue)
+          
+          objectLoop(remainingUnmaskedObject, newMaskedObject)  
+       }
+      
+    }
+
+    JsonObject.fromIterable(objectLoop(jobj.toVector, Vector.empty))
+  }
+
+
+
 }
+
