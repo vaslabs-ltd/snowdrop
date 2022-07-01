@@ -2,6 +2,11 @@
 #.*
 *.swp
 .DS_Store
+.metals/
+.vscode
+.bloop/
+metals.sbt
+*.cache
 
 /*/target
 /target
