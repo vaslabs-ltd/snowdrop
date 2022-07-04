@@ -11,6 +11,12 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
       Json.fromString("*****")
   }
 
+  "json masking" must "mask a json string literal according to user defined mask" in {
+    val userCustomMask = Json.fromString("#####")
+    MaskJson.applyWithCustomMask(Json.fromString(""))(userCustomMask) mustEqual
+      userCustomMask
+  }
+
  "json masking" must "have no effect on an empty json array" in {
     MaskJson.apply(Json.arr()) mustEqual Json.arr()
   }
@@ -57,6 +63,27 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
       
     )    
     MaskJson.apply(person) mustEqual expectedOutput
+  }
+
+  "json masking" must "mask all nested values within a json object with custom user masking" in {
+    val userCustomMask = Json.fromString("#")
+    val friendA = createFriend("A", 15, List("food"))
+
+    val friendB = createFriend("B", 16, List("football"))
+
+    val allFriends = Json.arr(friendA, friendB)
+
+    val person = createPerson("George", 17, List("movies"), allFriends)
+
+    val expectedOutput = Json.obj(
+      "name" -> userCustomMask,
+      "age" -> userCustomMask,
+      "hobbies" -> Json.arr(userCustomMask),
+      "friends" -> Json.arr(Json.obj("name" -> userCustomMask, "age" -> userCustomMask, "hobbies" -> Json.arr(userCustomMask)), 
+      Json.obj("name" -> userCustomMask, "age" -> userCustomMask, "hobbies" -> Json.arr(userCustomMask)))
+      
+    )    
+    MaskJson.applyWithCustomMask(person)(userCustomMask) mustEqual expectedOutput
   }
 
   private def createFriend(name: String, age: Int, hobbies: List[String]): Json = 
