@@ -70,28 +70,4 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
     createFriend(name, age, hobbies).mapObject(_.add("friends", friends))
 }
 
-/*
-{
-  "name" : "George",
-  "age" : "15",
-  "hobbies" : ["football", "food", "movies"]
-}
-{
-  "name" : "George",
-  "age" : "15",
-  "hobbies" : ["football", "food", "movies"],
-  "friends": [
-    {
-      "name",
-      "age": "16",
-      "hobbies": []
-    },
-     {
-      "name",
-      "age": "16",
-      "hobbies": []
-    }
-  ]
-}
-*/
 
