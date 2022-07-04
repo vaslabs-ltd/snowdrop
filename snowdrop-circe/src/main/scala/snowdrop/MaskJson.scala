@@ -6,6 +6,10 @@ import io.circe.JsonObject
 
 object MaskJson {
   final val StringMask = "*****"
+
+  //carrying function in order to set a custom masking
+  def applyUsersCustomMasking(text: String) = (customMask:String) => customMask
+
   def apply(json: Json): Json = {
     if(json.isArray) 
       json.mapArray(maskVectorJson)
@@ -13,7 +17,9 @@ object MaskJson {
       json.mapObject(maskJsonObject)
     }
     else
-      Json.fromString(StringMask)
+ 
+     
+      Json.fromString(applyUsersCustomMasking(json.toString())("--Hidden text--"))
   }
 
   private def maskVectorJson(vector: Vector[Json]): Vector[Json] = {

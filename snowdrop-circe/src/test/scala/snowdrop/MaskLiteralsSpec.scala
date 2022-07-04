@@ -8,7 +8,12 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
 
   "json masking" must "mask a json string literal" in {
     MaskJson.apply(Json.fromString("")) mustEqual
-      Json.fromString("*****")
+      Json.fromString("--Hidden text--")
+  }
+
+  "json masking" must "mask a json string literal with user's masking input" in {
+    MaskJson.apply(Json.fromString("")) mustEqual
+      Json.fromString("--Hidden text--")
   }
 
  "json masking" must "have no effect on an empty json array" in {
@@ -18,7 +23,7 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
   "json masking" must "mask all elements within an array(string)" in {
     val input: Json = Json.arr(Json.fromString("fdfdhf"))
     
-    val expectedOutput: Json = Json.arr(Json.fromString("*****"))
+    val expectedOutput: Json = Json.arr(Json.fromString("--Hidden text--"))
     
     MaskJson.apply(input) mustEqual expectedOutput
   }
@@ -26,14 +31,14 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
   "json masking" must "mask all elements within an array(array(string))" in {
     val input: Json = Json.arr(Json.arr(Json.fromString("fdfdhf")))
     
-    val expectedOutput: Json = Json.arr(Json.arr(Json.fromString("*****")))
+    val expectedOutput: Json = Json.arr(Json.arr(Json.fromString("--Hidden text--")))
     
     MaskJson.apply(input) mustEqual expectedOutput
   }
 
   "json masking" must "mask all elements within a json object" in {
     val input: Json = Json.obj("dfhdfhhdf" -> Json.fromString("dfhdfhhd"))
-    val expectedOutput: Json = Json.obj("dfhdfhhdf" -> Json.fromString("*****"))
+    val expectedOutput: Json = Json.obj("dfhdfhhdf" -> Json.fromString("--Hidden text--"))
 
     MaskJson.apply(input) mustEqual expectedOutput
   }
@@ -49,11 +54,11 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
     val person = createPerson("George", 17, List("movies"), allFriends)
 
     val expectedOutput = Json.obj(
-      "name" -> Json.fromString("*****"),
-      "age" -> Json.fromString("*****"),
-      "hobbies" -> Json.arr(Json.fromString("*****")),
-      "friends" -> Json.arr(Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))), 
-      Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))))
+      "name" -> Json.fromString("--Hidden text--"),
+      "age" -> Json.fromString("--Hidden text--"),
+      "hobbies" -> Json.arr(Json.fromString("--Hidden text--")),
+      "friends" -> Json.arr(Json.obj("name" -> Json.fromString("--Hidden text--"), "age" -> Json.fromString("--Hidden text--"), "hobbies" -> Json.arr(Json.fromString("--Hidden text--"))), 
+      Json.obj("name" -> Json.fromString("--Hidden text--"), "age" -> Json.fromString("--Hidden text--"), "hobbies" -> Json.arr(Json.fromString("--Hidden text--"))))
       
     )    
     MaskJson.apply(person) mustEqual expectedOutput
