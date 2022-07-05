@@ -11,9 +11,24 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
       Json.fromString("*****")
   }
 
+  "json masking" must "not mask a json number literal by default" in {
+    MaskJson.apply(Json.fromInt(123)) mustEqual
+      Json.fromInt(123)
+  }
+
+  "json masking" must "yield the json untouched if it's a boolean" in {
+    MaskJson.apply(Json.False) mustEqual Json.False
+  }
+
   "json masking" must "mask a json string literal according to user defined mask" in {
     val userCustomMask = Json.fromString("#####")
     MaskJson.applyWithCustomMask(Json.fromString(""))(userCustomMask) mustEqual
+      userCustomMask
+  }
+
+  "json masking" must "mask a json number literal according to user defined mask" in {
+    val userCustomMask = Json.fromString("#####")
+    MaskJson.applyWithCustomMask(Json.fromInt(123))(numberMasking = Some(userCustomMask)) mustEqual
       userCustomMask
   }
 
