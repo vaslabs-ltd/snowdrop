@@ -28,27 +28,29 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
 
   "json masking" must "mask a json number literal according to user defined mask" in {
     val userCustomMask = Json.fromString("#####")
-    MaskJson.applyWithCustomMask(Json.fromInt(123))(numberMasking = Some(userCustomMask)) mustEqual
+    MaskJson.applyWithCustomMask(Json.fromInt(123))(numberMasking =
+      Some(userCustomMask)
+    ) mustEqual
       userCustomMask
   }
 
- "json masking" must "have no effect on an empty json array" in {
+  "json masking" must "have no effect on an empty json array" in {
     MaskJson.apply(Json.arr()) mustEqual Json.arr()
   }
 
   "json masking" must "mask all elements within an array(string)" in {
     val input: Json = Json.arr(Json.fromString("fdfdhf"))
-    
+
     val expectedOutput: Json = Json.arr(Json.fromString("*****"))
-    
+
     MaskJson.apply(input) mustEqual expectedOutput
   }
 
   "json masking" must "mask all elements within an array(array(string))" in {
     val input: Json = Json.arr(Json.arr(Json.fromString("fdfdhf")))
-    
+
     val expectedOutput: Json = Json.arr(Json.arr(Json.fromString("*****")))
-    
+
     MaskJson.apply(input) mustEqual expectedOutput
   }
 
@@ -60,7 +62,7 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
   }
 
   "json masking" must "mask all nested values within a json object" in {
-    
+
     val friendA = createFriend("A", 15, List("food"))
 
     val friendB = createFriend("B", 16, List("football"))
@@ -73,10 +75,19 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
       "name" -> Json.fromString("*****"),
       "age" -> Json.fromString("*****"),
       "hobbies" -> Json.arr(Json.fromString("*****")),
-      "friends" -> Json.arr(Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))), 
-      Json.obj("name" -> Json.fromString("*****"), "age" -> Json.fromString("*****"), "hobbies" -> Json.arr(Json.fromString("*****"))))
-      
-    )    
+      "friends" -> Json.arr(
+        Json.obj(
+          "name" -> Json.fromString("*****"),
+          "age" -> Json.fromString("*****"),
+          "hobbies" -> Json.arr(Json.fromString("*****"))
+        ),
+        Json.obj(
+          "name" -> Json.fromString("*****"),
+          "age" -> Json.fromString("*****"),
+          "hobbies" -> Json.arr(Json.fromString("*****"))
+        )
+      )
+    )
     MaskJson.apply(person) mustEqual expectedOutput
   }
 
@@ -94,22 +105,40 @@ class MaskLiteralsSpec extends AnyFlatSpec with Matchers {
       "name" -> userCustomMask,
       "age" -> userCustomMask,
       "hobbies" -> Json.arr(userCustomMask),
-      "friends" -> Json.arr(Json.obj("name" -> userCustomMask, "age" -> userCustomMask, "hobbies" -> Json.arr(userCustomMask)), 
-      Json.obj("name" -> userCustomMask, "age" -> userCustomMask, "hobbies" -> Json.arr(userCustomMask)))
-      
-    )    
-    MaskJson.applyWithCustomMask(person)(userCustomMask) mustEqual expectedOutput
+      "friends" -> Json.arr(
+        Json.obj(
+          "name" -> userCustomMask,
+          "age" -> userCustomMask,
+          "hobbies" -> Json.arr(userCustomMask)
+        ),
+        Json.obj(
+          "name" -> userCustomMask,
+          "age" -> userCustomMask,
+          "hobbies" -> Json.arr(userCustomMask)
+        )
+      )
+    )
+    MaskJson.applyWithCustomMask(person)(
+      userCustomMask
+    ) mustEqual expectedOutput
   }
 
-  private def createFriend(name: String, age: Int, hobbies: List[String]): Json = 
+  private def createFriend(
+      name: String,
+      age: Int,
+      hobbies: List[String]
+  ): Json =
     Json.obj(
       "name" -> Json.fromString(name),
       "age" -> Json.fromString(age.toString),
-      "hobbies" -> Json.arr(hobbies.map(Json.fromString):_*)
+      "hobbies" -> Json.arr(hobbies.map(Json.fromString): _*)
     )
 
-  private def createPerson(name: String, age: Int, hobbies: List[String], friends: Json): Json =
+  private def createPerson(
+      name: String,
+      age: Int,
+      hobbies: List[String],
+      friends: Json
+  ): Json =
     createFriend(name, age, hobbies).mapObject(_.add("friends", friends))
 }
-
-
