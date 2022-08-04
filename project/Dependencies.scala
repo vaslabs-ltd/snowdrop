@@ -5,9 +5,11 @@ object Dependencies {
   object Library {
     object circe {
       val core = "io.circe" %% "circe-core" % Version.circe
+      val generics =   "io.circe" %% "circe-generic" % Version.circe
     }
     val scalatest =
       "org.scalatest" %% "scalatest" % Version.scalatest % "test"
+    val scalacheck = "org.scalacheck" %% "scalacheck" % "1.14.1" % "test"
   }
 
   object Version {
@@ -19,7 +21,9 @@ object Dependencies {
     val `snowdrop-circe` =
       Seq(
         Library.circe.core,
-        Library.scalatest
+        Library.circe.generics,
+        Library.scalatest,
+        Library.scalacheck
       )
   }
 }
